@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+  padding-right: 7px;
+  color: black;
+}
+
+.link:hover,
+.link:focus {
+  color: #662549;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: #662549;
+  text-decoration: none;
+}
