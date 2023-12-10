@@ -1,12 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>
-        Task manager welcome page{' '}
-        <span role="img" aria-label="Greeting icon">
-          💁‍♀️
-        </span>
-      </h1>
+      <h1>Welcome back to your Phonebook</h1>
     </div>
   );
 }

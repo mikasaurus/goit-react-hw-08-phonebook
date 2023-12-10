@@ -15,10 +15,14 @@ export const ContactList = () => {
         .filter(contact =>
           contact.name.toLowerCase().includes(filter.toLowerCase())
         )
-        .map(({ name, number, id }) => (
+        .map(contact => (
           <li>
-            {name}: {number}
-            <button type="button" onClick={handleDelete} className={css.button}>
+            {contact.name}: {contact.number}
+            <button
+              type="button"
+              onClick={() => handleDelete(contact.id)}
+              className={css.button}
+            >
               Delete
             </button>
           </li>

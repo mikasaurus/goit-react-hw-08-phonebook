@@ -8,8 +8,8 @@ export const UserMenu = () => {
   const { user } = useAuth();
 
   return (
-    <div className={css.wrapper}>
-      <p>Welcome, {user.name}</p>
+    <div>
+      <p>Logged as {user.email}</p>
       <button type="button" onClick={() => dispatch(logOut())}>
         Logout
       </button>
